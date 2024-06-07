@@ -17,8 +17,8 @@ def random_opinion():
 
 @app.route('/')
 def index_view():
-    quantity = random_opinion()
-    if not quantity:
+    opinion = random_opinion()
+    if opinion is None:
         abort(500)
     return render_template('opinion.html', opinion=opinion)
 

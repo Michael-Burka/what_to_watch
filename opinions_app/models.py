@@ -13,7 +13,7 @@ class Opinion(db.Model):
 
     def to_dict(opinion):
         return dict(
-            id = opinion.id,
+            id=opinion.id,
             title = opinion.title,
             text = opinion.text,
             source = opinion.source,
